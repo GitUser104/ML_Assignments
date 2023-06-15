@@ -1,0 +1,92 @@
+#Question1
+Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually 
+improving its accuracy.
+
+
+#Question2
+Machine learning is used widely to perform and enhance our day to day tasks. 4 of such tasks commonly used are :-
+1. Image recognition
+2. Speech recognition
+3. Medical diagnonsis
+4. Predictive and data ana;ytics
+
+
+#Question3
+A labeled training dataset is a chunk of data that is separated from the raw data that we use for training our ML models. The training set is used to train the algorithm, and 
+then you use the trained model on the test set to predict the response variable values that are already known. The final step is to compare the predicted responses against the actual (observed) responses to see how close they are.
+
+
+#Question4
+The two most common supervised tasks are regression and classification.
+
+
+#Question5
+The 4 common unsupervised tasks are visualization, clustering, dimensionality reduction and association rule learning.
+
+
+#Question6
+The best Machine Learning algorithm to allow a robot to walk in unknown terrain is Reinforced Learning.
+
+
+#Question7
+We shoould use the K-means clustering to divide the customers into different groups.
+
+
+#Question8
+Spam detection is an exmaple of supervised machine learning.
+
+
+#Question9
+The online learning system is a way for an instructor to deliver knowledge to the students via distance through the use of online meetings and internet.
+
+
+#Question10
+The term out-of-core typically refers to processing data that is too large to fit into a computer’s main memory.
+Out of core learning is typically used to perform learning on data that is very large to fit on single systems memory whereas core learning is done on a single data i.e. data 
+is smaller in size.
+
+
+#Question11
+Learning algorithm that relies on a similarity measure to make predictions is instance-based algorithm.
+
+
+#Question12
+Model parameters are internal to the model and estimated from data automatically, whereas Hyperparameters are set manually and are used in the optimization of the model and 
+help in estimating the model parameters.
+
+
+#Question13
+Model based learning algorithm search for the optimal value of parameters in a model that will give the best results for the new instances. We often use a cost function or 
+similar to determine what the parameter value has to be in order to minimize the function.
+
+
+#Question14
+Four main challenges in Machine Learning include overfitting the data (using a model too complicated), underfitting the data (using a simple model), lacking in data and
+nonrepresentative data.
+
+
+#Question15
+The three different reasons can be poor choice of generalized ML model, underfitting and overfitting.
+
+
+#Question16
+A test set is a dataset that is used to test the model for performance after it has been trianed initially on a training dataset. We need a test dataset to perform a real life 
+performance on the the model.
+
+
+#Question17
+ In simple terms, the validation set is used to optimize the model parameters while the test set is used to provide an unbiased estimate of the final model.
+
+
+#Question18
+The goal of dev-set is to rank the models in term of their accuracy and helps us decide which model to proceed further with. Using Dev set we rank all our models in terms of
+their accuracy and pick the best performing model.
+
+
+#Question19
+If you use the test data to choose hyperparameters, you actually give the model a chance to "see" the test data and to develop a bias towards this test data. Therefore, you actually lose 
+the possibility to find out how good your model would actually be on unseen data (because it has already seen the test data).
+
+
+
+

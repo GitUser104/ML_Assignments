@@ -1,0 +1,174 @@
+#Question1
+Learning to drive a motor-car, typewriting, singing or memorizing a poem or a mathematical table, and music etc. need exercise and repetition of various movements and actions many times 
+are all examples of human learning.
+
+
+#Question2
+There are three types of human learning - 
+1) Learning through association  - Classical Conditioning
+2) Learning through consequences – Operant Conditioning
+3) Learning through observation – Modeling/Observational Learning
+
+The Reinforcement machine learning is the closest to human learning.
+
+
+#Question3
+Machine learning is a core sub-area of Artificial Intelligence (AI). ML applications learn from experience (or to be accurate, data) like humans do without direct programming.
+The key purpose of ML is focused on building systems that can learn from historical data, identify patterns, and make logical decisions with little to no human intervention.
+
+
+#Question4
+Since reinforced machine learning works on the feedback type of system thus if the feedback received is positive then it receives a reward and if the feedback received is negative 
+then the agent/model receives a penalty.
+
+
+#QUestion5
+In learning as a search concept we try to find out all the semantically and syntatctically accurate distinct hypothesis for the learning problem we have and then try and choose the 
+best fit hypothesis from all of these hypothesis.
+
+
+#Question6
+1. To make the computers smarter, more intelligent. The more direct objective in this aspect is to develop systems (programs) for specific practical learning tasks in application 
+   domains.
+2. To dev elop computational models of human learning process and perform computer simulations.
+   the study in this aspect is also called cognitive modeling.
+3. To explore new learning methods and develop general learning algorithms independent of application.
+
+The relation between these and human learning is that it is possible for machines to almost mimic human learning given the right training and mathematical modelling. Thus we can 
+automate many tasks using these techniques and achieve better computation speeds and statistical analysis.
+
+
+#Question7
+Lets assume a situation where we have to predict the insurance amount for a person then the various steps invovlved in building a ML model that can perform the taks for us are:-
+1. Collection of raw data from various databases and web for training and testing our model and improting various libraries and modules to aid our work.
+2. Now, clean our data by removing duplicate values, and transforming columns into numerical values to make them easier to work with.     
+3. Further we split our dataset into training and testing sets.
+4. Now we train our dataset on the suitable ML model.
+5. Further we test our model on the test data and accordingly tune our hyperparameters to give the best accuracy.
+
+
+#Question8
+
+##Defining a parent class of 
+class Polygon():   
+  
+  
+   def sides(self):   
+      pass  
+  
+class Triangle(Polygon):   
+  
+     
+   def sides(self):   
+      print("Triangle has 3 sides")   
+  
+class Pentagon(Polygon):   
+  
+     
+   def sides(self):   
+      print("Pentagon has 5 sides")   
+  
+class Hexagon(Polygon):   
+  
+   def sides(self):   
+      print("Hexagon has 6 sides")   
+  
+class square(Polygon):   
+  
+   def sides(self):   
+      print("I have 4 sides")   
+ 
+t = Triangle()   
+t.sides()   
+##Output - Traingle has 3 sides
+
+s = square()   
+s.sides()   
+##Output - Square has 4 sides
+ 
+p = Pentagon()   
+p.sides()   
+##Output - Pentagon has 5 sides 
+
+k = Hexagon()   
+K.sides()   
+##Output - Hexagon has 6 sides 
+
+
+#Question9
+The concept of generalization can be defined as the ability of the ML model to avoid overfitting and underfitting or biasness towards the output. The more geenralized a model is 
+the better the result and computation time for predicting the output.
+Generalization helps in avoiding the underfitting and overfitting condition while building a ML model which can help in a model that takes less computation time and produces better 
+predicitons. This tends to work better in the real life scenario as compared to highly overfitted models.
+
+
+#QUestion10
+Classification is the process of finding a model that represents and differentiate data classes or concepts, for the objective of being able to use the model to predict the class of objects whose class label is anonymous.
+
+-> Classification
+-Classification gives out discrete values.	
+-Given a group of data, this method helps group the data into different groups.
+-In classification, the nature of the predicted data is unordered.
+-Classification is done by measuring the accuracy.
+
+->Regression
+-Regression gives continuous values.
+-It uses the mapping function to map values to continuous output.
+-It attempts to find a best fit line. It tries to extrapolate the graph to find/predict the values
+-Regression is done using the root mean square error method.
+
+
+
+#Question11
+Regression is a type of supervised machine learning approach which can be used to forecast any continuous−valued attribute. 
+Medical  researchers often  use linear regression  to  understand  the  relationship  between  drug  dosage  and  blood  pressure  of patients.  For  example,  researchers  might  administer  various dosages 
+of  a  certain  drug  to  patients  and  observe  how  their  blood  pressure  responds.
+
+
+#Question12
+-Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset. It can be defined as "A way of grouping the data points into different clusters, consisting of similar data points. The objects with the possible similarities remain in a group that has less or no similarities with another group."
+
+-It does it by finding some similar patterns in the unlabelled dataset such as shape, size, color, behavior, etc., and divides them as per the presence and absence of those similar patterns.
+
+-It is an unsupervised learning method, hence no supervision is provided to the algorithm, and it deals with the unlabeled dataset.
+
+-After applying this clustering technique, each cluster or group is provided with a cluster-ID. ML system can use this id to simplify the processing of large and complex datasets.
+
+
+#Question13
+1. Machine learning algorithms which needs supervision are known as supervised machine learning techniques. They are of two types Regresison and Classification.
+Where the classification models are used to predict fixed results such as True(1)/False(0) or fixed values the regression models are used to predict continous values and can be used to 
+make classification predictions as well.
+Examples of supervised machine learning algoritjhms are Linear regresssion , Random forest, Support Vector Machine, L1/L2 regularitzation.
+
+1.1 Advantages-
+-With  the  help  of  supervised  learning,  the  model  can  predict  the  output on the basis of prior experiences.
+-In  supervised  learning,  we can have  an exact idea  about the  classes  of  objects.
+
+1.2 Examples- 
+-Fraud  detection,  Spam filtering, etc.
+
+1.3 Disadvantages-
+-Supervised learning models are not suitable for handling the complex tasks. 
+-Supervised learning cannot predict the correct output if the test data is different from the training dataset.
+-Training  required lots of computation  times.
+
+
+2. Reinforcement learning is a machine learning training method based on rewarding desired behaviors and/or punishing undesired ones. In general, a reinforcement learning agent is able to perceive and interpret its environment, take actions and learn through trial and error.
+Common techniques using this model are SARSA, Q-learning, Deep-Q networks.
+
+2.1 Advantages
+-This learning model is very similar to the learning of human beings. 
+-The model can correct the errors that occurred during the training process and prevent on its own happening of the same error.
+-It can create the perfect model to solve a particular problem.
+
+2.2 Disadvantages
+-Too much reinforcement learning can lead to an overload of states, which can diminish the results.
+-Reinforcement learning needs a lot of data and a lot of computation. It is data-hungry.Thus, explaining the widespread use in gaming.
+-The curse of dimensionality limits reinforcement learning heavily for real physical systems.
+
+2.3 Examples-
+-Gaming, Resource management, Personalized recommendations, Robotics.
+
+
+
