@@ -1,0 +1,184 @@
+#QUESTION1
+The key tasks and steps associated to a end to end ML project and modelling are:-
+1. Gathering Data - Identify various data sources, Collect data, Integrate the data obtained from different sources
+2. Data preparation - We need to understand the characteristics, format, and quality of data and preprocessing of data for its analysis. 
+3. Data Wrangling - cleaning and converting raw data into a useable format. Handling missing values, duplicate data, invalid data, noise.
+4. Analyse Data - THis step involves selection of analytical techniques, building models, Review the result.
+5. Train the model - This next step is to train the model, in this step we train our model to improve its performance for better outcome of the problem.
+6. Test the model - Once our machine learning model has been trained on a given dataset, then we test the model, check for the accuracy of our model by providing a test dataset to it
+7. Deployment - The last step of machine learning life cycle is deployment, where we deploy the model in the real-world system. It should be usable by anyone anyhwere.
+
+
+
+
+
+#QUESTION2
+Most data can be categorized into 4 basic types from a Machine Learning perspective: 
+1. Numerical data 
+ 1.1 Continous - For example scores in an exam , temperature , salaries.
+ 1.2 Discrete - For example students in a class , units of items sold.
+
+2. Categorical data - Categorical data represents characteristics, such as a hockey player’s position, team, hometown.
+3. Time-series data - For example, we might measure the average number of home sales for many years.
+4. Text - For example paraghraphs, sentences. 
+
+
+
+
+
+#QUESTION3
+Numerical-
+1. Numerical data are numbers, not words or descriptions. Quantitative data represents numerical values for arithmetic processes.
+2. Example-  
+  Test score out of 20? 
+  ->Below 5
+  ->5-10
+  ->10-15 
+  ->15-20
+
+3. Discrete data and Continuous data. 
+4. Mostly multiple-choice, sometimes open-ended questions.
+5. Since it is structured, it can be easily arranged and understood.
+
+
+Categorical-
+1.Categorical data can be stored and identified by names or labels. Because it qualifies data before categorizing it, it is sometimes referred to as qualitative data.	
+2 Example-
+ Define gender.
+ ->Male
+ ->Female
+ ->Other
+3.Nominal data and Ordinal data.
+4.Long surveys are a possibility and may turn off responders. Nominal data: open-ended questions , Ordinal data: multiple-choice questions.
+5. Unstructured data Like Google, Bing, etc., it can index data.
+
+
+
+Purpose of feature selection is to find the features that have greater imapact on outcome of predictive model while dimensionality reduction is about to reduce the features without lossing much genuine information and and improve the performance.
+
+
+
+
+
+
+#QUESTION4
+-> HISTOGRAM
+A histogram is the graphical representation of data where data is grouped into continuous number ranges and each range corresponds to a vertical bar. It is a plot that lets you show the underlying frequency distribution or the probability distribution of a single continuous numerical variable.For example: height, weight, age, temperature.
+A histogram provides a visual representation of the distribution of a dataset: location, spread and skewness of the data; it also helps to visualize whether the distribution is symmetric or skewed left or right.
+
+When to use:-
+1. The first thing to remember while using histograms is the data type, which usually gives better insights into the numerical data.
+2. Then if we want to see the distribution of the dataset for that reason, this plot is handy to determine whether the data is normally distributed or not.
+3. Histograms are also very beneficial in identifying popular statistical measures such as median, standard median, minimum, and maximum data points.
+
+-> Categories of histograms:-
+1. Normal plots: For a basic understanding of histograms, i.e. to see the distribution of data points within the specified range.
+2. Density and bins: Taking a step forward to density parameter will help us know the probability connection with histograms, and bins will help in the normalization
+
+->Types of Histograms:-
+1. Normal distributed 
+2. Left skewed 
+3. Right skewed 
+
+->SCATTER PLOT
+Scatter plots are the graphs that present the relationship between two variables in a data-set. It represents data points on a two-dimensional plane or on a Cartesian system. The independent variable or attribute is plotted on the X-axis, while the dependent variable is plotted on the Y-axis.
+
+When to use:-
+1. When we have paired numerical data
+2. When there are multiple values of the dependent variable for a unique value of an independent variable
+3. In determining the relationship between variables in some scenarios, such as identifying potential root causes of problems, checking whether two products that appear to be related both occur with the exact cause and so on.
+
+Scatter plot helps us to evaluate the correlation between the variables. It can be of the following types:-
+1. Positive correlation - When the points in the graph are rising, moving from left to right, then the scatter plot shows a positive correlation. It means the values of one variable are increasing with respect to another.
+2. Negative correlation - When the points in the scatter graph fall while moving left to right, then it is called a negative correlation. It means the values of one variable are decreasing with respect to another. 
+3. No correlation - When the points are scattered all over the graph and it is difficult to conclude whether the values are increasing or decreasing, then there is no correlation between the variables.
+
+
+
+
+
+
+#QUESTION5
+In order to build a powerful machine learning algorithm. We need to explore and understand our data set before we define a predictive task and solve it. Thus data investigation is a major step for futher exploratory data analysis. 
+The better the analysis the better the accuracy of the predicted outcome for the ML model.
+The data can be divided in to two categories like categorical and quantitative for which we can perform qualitative and quantitative analysis respectively.
+However certain problems might arise due to the combination of qualitative and quantitative data which can also lead to clashes in the philosophical assumptions behind each approach.
+
+
+
+
+
+
+#QUESTION6
+The following are the commonly found histogram shapes :- 
+1. Normally distributed 
+2. Left skewed 
+3. Right skewed
+4. Uniformly distributed 
+5. Bimodal i.e. has 2 peaks
+6. Randomly distributed
+
+A histogram displays numerical data by grouping data into "bins" of equal width. Each bin is plotted as a bar whose height corresponds to how many data points are in that bin. Bins are also sometimes called "intervals" or "classes".
+
+
+
+
+
+
+#QUESTION7
+If our dataset is small, we can detect the outlier by just looking at the dataset. But incase of a bigger dataset we resort to visualization and mathematical techniques to help treat the outliers in an effectibve way.Some of the common 
+techniques we can use to do the same are :-
+-> Boxplots
+-> Z-score
+-> Inter Quantile Range(IQR)
+Further there are several methods commonly used to treat outliers, depending on the nature of the data and the specific analysis being conducted.Some of the common approaches include:-
+1. Deletion - 
+2. Transformation
+3. Winsorization
+4. Imputation
+5. Model based approach 
+
+
+
+
+
+#QUESTION8
+There are 3 measures of central tendency are :-
+1. Mean - The mean represents the average value of the dataset. It can be calculated as the sum of all the values in the dataset divided by the number of values. In general, it is considered as the arithmetic mean.
+2. Median - Median is the middle value of the dataset in which the dataset is arranged in the ascending order or in descending order. When the dataset contains an even number of values, then the median value of the dataset can be found            by taking the mean of the middle two values.
+3. Mode - The mode represents the frequently occurring value in the dataset. Sometimes the dataset may contain multiple modes and in some cases, it does not contain any mode at all.
+
+In some cases the mean and median vary too much simplky because the mean is a propert dependent upon the sum of all the obeservations or objects whereas median is a property deoendent upon the freuquency of the event or object. This causes the mean to get greatly affected upon the introduction of extreme values or outliers whereas the median is not that affected when an outliers is introduced.
+
+
+
+
+
+#QUESTION9
+Since a bivariate data is one in which there is a comparative study between two variables. The scatter plot helps us to define and study a correlation betweent two vriables and check for trends or patterns. The scatter plot generally 
+produces the following results :-
+
+1. Positive correlation - When the points in the graph are rising, moving from left to right, then the scatter plot shows a positive correlation. It means the values of one variable are increasing with respect to another.
+2. Negative correlation - When the points in the scatter graph fall while moving left to right, then it is called a negative correlation. It means the values of one variable are decreasing with respect to another. 
+3. No correlation - When the points are scattered all over the graph and it is difficult to conclude whether the values are increasing or decreasing, then there is no correlation between the variables.
+
+Thus from looking at the bivariate scatter plot we can easily obeserve and study the correlation between the two varibales and check for patterns and trends enabling us to make informed decisions and analysis.
+It might be possible to detect the outliers in a scatter plot given that the data is evenly distributed accross the trend line. But such cases can arise only if the data is very consistent and both the variables have a strong 
+relationship betweeen themseleves. Thus, for practical scenarios mostly other charts such as the box plot.
+
+
+
+
+#QUESTION10
+Cross tabulation groups variables to understand the correlation between different variables. It also shows how correlations change from one variable grouping to another. It is usually used in statistical analysis to find patterns, trends, and probabilities within raw data. Cross tabulation is usually performed on categorical data i.e. data that can be divided into mutually exclusive groups.
+
+Following are some of the key benefits of using cross tabulation:-
+
+1. Eliminates confusion while interpreting data, Cross tabulation offers a simple method of grouping variables, which minimizes the potential for confusion or error by providing clear results.
+2. Helps in deriving innumerable insights, 
+3. Offers data points to chart out a course of action, Cross tabulation makes it easier to interpret data, which is beneficial for researchers who have limited knowledge of statistical analysis.
+4. Ease of use , since cross tabulation can be done using the simple tools therefore statistical programming is not reallt required.
+
+It is also the most widely used techinique for market reasearch and analysis which makes it realiable.
+
+
