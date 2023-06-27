@@ -1,0 +1,195 @@
+#QUESTION 1
+The task refers to the type of problems we can solve using machine learning models. The following are the type of tasks that can be solved using ML :-
+1. Classification problems :- Binary and multiclass classification , animal recognition.
+2. Regression problems :- Predicting climate and temperatures, rainfall.
+3. Clustering :- Market shopping recognition , movies predcition.
+4. Dimensionality reduction - remove features which have low covariance to better predict results
+5. Density estimation - Anomaly detection
+6. Reinforcemnent learning - feedback based learning like robotics , gaming.
+Data pre processing refers to the stage where we clean and prepare the data for futher processing and building an ML model. We convert a raw dataset into a clean dataset by checking for missing values, noise and other inconsistencies and format.
+
+
+
+
+#QUESTION 2
+->QUANTATIVE
+1. Data which can be quantified i.e. counted or measured and given a numerical value is known as quatitative data. It gives info in numbers and values.
+2. Quantative data gives us information regarding how many, how much, or how often.
+3. Quantitative data is fixed and universal.
+4. Quantitative data is gathered by measuring and counting
+5. Quantitative data is analyzed using statistical analysis
+
+-> QUALITATIVE
+1. Qualitative data is descriptive, relating to language.
+2. Qualitative data can help us to understand the why or how behind certain behaviors, or it can simply describe a certain attribute.
+3. Qualitative data is subjective and dynamic
+4. Qualitative data is collected by interviewing and observing.
+5. Qualitative data is analyzed by grouping it in terms of meaningful categories or themes.
+
+
+
+
+
+
+#QUESTION 3
+-> DATA SET 
+
+
+roll no. | age | examination date | examination time | score |   remarks   | gender
+
+   1       14       25/01/2023          10:00 AM         65      average       M 
+   2       15       26/01/2023          10:30 AM         94     excellent      F
+   3       14       27/01/2023          11:00 AM         88     very good      M
+   4       12       29/01/2023          11:30 AM         73       good         F
+
+
+
+#QUESTION 4
+1. Inadequate Training Data or poor quality of data
+2. Non-representative training data
+4. Overfitting and Underfitting
+5. Monitoring and maintenance
+6. Getting bad recommendations
+8. Customer Segmentation
+9. Process Complexity of Machine Learning
+12. Slow implementations and results
+13. Irrelevant features
+
+Fixes :-
+1. The solution to these issues is to take the time to evaluate and scope data with meticulous data governance, data integration, and data exploration until you get clear data. 
+2. Always check if your infrastructure can handle Machine Learning processes at large scale.
+3. Process data for underfitting and overfitting conditions and give a generalized model using reularization, no of attributes in training data, selecting correct parameters in ML model for underfitting while selecting a better model , increasing the number of features.
+4. Regularly editing codes to accomodate for change in input data 
+
+
+
+
+
+#QUESTION 5
+1. Using value_counts()
+`value_counts()` is a function in the pandas library that returns the frequency of each unique value in a categorical data column.
+
+2. using group_by()
+`groupby()` is a function in Pandas that allows you to group data by one or more columns and apply aggregate functions such as sum, mean, and count.
+
+3. using crosstab()
+`crosstab()` is a function in pandas that creates a cross-tabulation table, which shows the frequency distribution of two or more categorical variables.
+
+4. using pivot_table()
+`pivot_table()` is a function in Pandas that creates pivot tables, which are similar to cross-tabulation tables but with more flexibility. 
+
+5. Using One Hot Encoding
+One hot encoding is a process of representing categorical data as a set of binary values, where each category is mapped to a unique binary value. 
+
+6. Using label encoding 
+Label encoding is a technique for encoding categorical variables as numeric values, with each category assigned a unique integer.
+
+
+
+
+
+
+
+#QUESTION 6
+It is important to handle the missing values appropriately.
+Many machine learning algorithms fail if the dataset contains missing values. 
+You may end up building a biased machine learning model, leading to incorrect results if the missing values are not handled properly.
+Missing data can lead to a lack of precision in the statistical analysis.
+
+1. Find the number of null values using the isnull() function.
+2. One way to handle these missing values after finding them is deletion of these values however, this approach is not recommended. It is one of the quick and dirty techniques one can use to deal with missing values. We can go for columnwise deletion or row wise deletion.
+3. Second method includes imputing the missing values. 
+4. Imputing the values for categorical values and replcing the value with the most frequently occuring catgory.
+
+
+
+
+
+#QUESTION 7
+1. Delete Rows with Missing Values:
+Missing values can be handled by deleting the rows or columns having null values. If columns have more than half of the rows as null then the entire column can be dropped. The rows which are having one or more columns values as null can also be dropped.
+
+2. Impute missing values with Mean or Median:
+Columns in the dataset which are having numeric continuous values can be replaced with the mean, median, or mode of remaining values in the column. This method can prevent the loss of data compared to the earlier method.
+
+3. Imputation method for categorical columns:
+When missing values is from categorical columns (string or numerical) then the missing values can be replaced with the most frequent category. If the number of missing values is very large then it can be replaced with a new category.
+
+4. Prediction of missing values:
+In the earlier methods to handle missing values, we do not use the correlation advantage of the variable containing the missing value and other variables. Using the other features which don’t have nulls can be used to predict missing values.
+
+5. Using Algorithms that support missing values:
+All the machine learning algorithms don’t support missing values but some ML algorithms are robust to missing values in the dataset. The k-NN algorithm can ignore a column from a distance measure when a value is missing. Naive Bayes can also support missing values when making a prediction. These algorithms can be used when the dataset contains null or missing values.
+
+
+
+
+
+#QUESTION 8
+Data preprocessing is a Data Mining method that entails converting raw data into a format that can be understood. Real-world data is frequently inadequate, inconsistent, and/or lacking in specific activities or trends, as well as including numerous inaccuracies. This might result in low-quality data collection and, as a result, low-quality models based on that data. Preprocessing data is a method of resolving such problems.
+
+->DIMENSIONALITY REDUCTION 
+The number of input features, variables, or columns present in a given dataset is known as dimensionality, and the process to reduce these features is called dimensionality reduction.
+
+-By reducing the dimensions of the features, the space required to store the dataset also gets reduced.
+-Less Computation training time is required for reduced dimensions of features.
+-Reduced dimensions of features of the dataset help in visualizing the data quickly.
+-It removes the redundant features (if present) by taking care of multicollinearity.
+
+->FEARTURE SELECTION 
+It is just another method for dimensionality redction.
+-Feature selection is a means of selecting the input data set's optimal, relevant features and removing irrelevant features.
+
+-Filter methods. This method filters down the data set into a relevant subset.
+
+-Wrapper methods. This method uses the machine learning model to evaluate the performance of features fed into it. The performance determines whether it’s better to keep or remove the          features to improve the model’s accuracy. This method is more accurate than filtering but is also more complex.
+
+-Embedded methods. The embedded process checks the machine learning model’s various training iterations and evaluates each feature’s importance.
+
+
+
+
+
+
+
+#QUESTION 9 
+-> IQR:
+The interquartile range rule is useful in detecting the presence of outliers. Outliers are individual values that fall outside of the overall pattern of a data set. The IQR helps us in 
+determining whether a point(s) is truly an outlier.
+Any set of data can be described by its five-number summary. These five numbers, which give you the information you need to find patterns and outliers, consist of (in ascending order):
+
+-The minimum or lowest value of the dataset
+-The first quartile Q1, which represents a quarter of the way through the list of all data
+-The median of the data set, which represents the midpoint of the whole list of data
+-The third quartile Q3, which represents three-quarters of the way through the list of all data
+-The maximum or highest value of the data set.
+
+Steps to find outliers :
+- Calculate the interquartile range for the data. (using Q3-Q1)
+- Multiply the interquartile range (IQR) by 1.5 (a constant used to discern outliers).
+- Add 1.5 x (IQR) to the third quartile. Any number greater than this is a suspected outlier.
+- Subtract 1.5 x (IQR) from the first quartile. Any number less than this is a suspected outlier.
+
+
+->BOX PLOT
+A box and whisker plot—also called a box plot—displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum. In a box plot, we draw a box from the first quartile to the third quartile. A vertical line goes through the box at the median.
+
+
+- Minimum: The minimum value in the given dataset
+- First Quartile (Q1): The first quartile is the median of the lower half of the data set.
+- Median: The median is the middle value of the dataset, which divides the given dataset into two equal parts. The median is considered as the second quartile.
+- Third Quartile (Q3): The third quartile is the median of the upper half of the data.
+- Maximum: The maximum value in the given dataset.
+- Apart from these five terms, the other terms used in the box plot are:
+- Interquartile Range (IQR): The difference between the third quartile and first quartile is known as the interquartile range. (i.e.) IQR = Q3-Q1
+- Outlier: The data that falls on the far left or right side of the ordered data is tested to be the outliers. Generally, the outliers fall more than the specified distance from the first and third quartile, (i.e.) Outliers are greater than Q3+(1.5*IQR) or less than Q1-(1.5*IQR).
+
+
+
+ 
+
+
+
+#QUESTION 10 
+The interquartile range The lower quartile, or first quartile (Q1), is the value under which 25% of data points are found when they are arranged in increasing order. The upper quartile, or third quartile (Q3), is the value under which 75% of data points are found when arranged in increasing order. The median is considered the second quartile (Q2). The interquartile range is the difference between upper and lower quartiles. The semi-interquartile range is half the interquartile range.
+

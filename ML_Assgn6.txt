@@ -1,0 +1,255 @@
+#QUESTION1
+A machine learning model is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data. We can us ethe following steps to best train our ML model:-
+
+1. Begin with existing data
+Since training  a ML model is a data heavy operation i.e. it requires data so that means the more the training data the better will be the performance of the model. But we always have to be mindful of the fact that we should use the best interpretation fo this data which means we should always preprocess the data and get rid of noise, duplicates, missing entries should be taken care of before training our model so that the training data is of highest quality possible whihc heps us in creating a ribust mdoel.
+
+2. Analyze data to identify patterns
+Unlike the caase of software development where humans sare responsible for interpretation of the dataset the ML models interpret the data themselves thus we should always use the different models available to us and then choose the best models since each model or library such as pytorch, tensorflow has different iterpretation fo the data and some of these algorithms are highly 
+configurable and some get trained very fast.
+
+3. Make predictions
+Now that the model is preprocessed and trained it is ready for use , we should always focus on building a model which can be used by anyone and anywhere i.e. it should be deployed in such 
+a way that the model is acessible to anyone who wansts to use it easily. The best way to often do this is deploy it as a package in cloud or provide it as a web app using an API for backend 
+needs.
+
+
+
+
+
+
+
+
+
+
+
+#QUESTION2
+The “no free lunch” (NFL) theorem for supervised machine learning is a theorem that essentially implies that no single machine learning algorithm is universally the best-performing algorithm for all problems. Every machine learning algorithm makes prior assumptions about the relationship between the features and target variables for a machine learning problem. 
+The performance of a machine learning algorithm on any given problem depends on how well the algorithm’s assumptions align with the problem’s reality. An algorithm may perform very well for one problem, but that gives us no reason to believe it will do just as well on a different problem where the same assumptions may not work.
+The limiting assumptions that you make when choosing any algorithm are like the price that you pay for lunch. These assumptions will make your algorithm naturally better at some problems while simultaneously making it naturally worse at other problems.
+
+
+
+
+
+
+
+#QUESTION3
+Cross validation is an evaluation method used in machine learning to find out how well your machine learning model can predict the outcome of unseen data. The data sample is split into ‘k’ number of smaller samples, hence the name: K-fold Cross Validation. 
+
+Steps to perform the K-Fold Cross Validation: 
+
+1. First, shuffle the dataset and split into k number of subsamples.
+2. In the first iteration, the first subset is used as the test data while all the other subsets are considered as the training data.
+3. Train the model with the training data and evaluate it using the test subset. Keep the evaluation score or error rate, and get rid of the model.
+4. Now, in the next iteration, select a different subset as the test data set, and make everything else (including the test set we used in the previous iteration) part of the training
+   data.
+5. Re-train the model with the training data and test it using the new test data set, keep the evaluation score and discard the model.
+6. Continue iterating the above k times. Each data subsamples will be used in each iteration until all data is considered. You will end up with a k number of evaluation scores.
+7. The total error rate is the average of all these individual evaluation scores.
+
+
+Further chosing a good value for k is important otherwise it result in high bias or high variance.Generally, there are three ways to select k:
+
+1. Let k = 5, or k =10. Through experimentation, it has been found that selecting k to be 5 or 10 results in sufficiently good results.
+2. Let k = n, where n is the size of the dataset. This ensures each sample is used in the test data set.
+3. Another way is to chose k so that every split data sample is sufficiently large, ensuring they are statistically represented in the larger dataset.
+
+
+
+
+
+
+
+
+#QUESTION4
+Bootstrap Sampling is a method that involves drawing of sample data repeatedly with replacement from a data source to estimate a population parameter.Let’s say we want to find the mean height of all the students in a school (which has a total population of 1,000). So, how can we perform this task?
+One approach is to measure the height of all the students and then compute the mean height.However, this would be a tedious task. 
+Instead of measuring the heights of all the students, we can draw a random sample of 5 students and measure their heights. We would repeat this process 20 times and then average the collected height data of 100 students (5 x 20). This average height would be an estimate of the mean height of all the students of the school. This process is the idea behind the bootstrap sampling.
+
+Hence, when we have to estimate a parameter of a large population, we can take the help of Bootstrap Sampling.
+
+
+
+
+
+
+#QUESTION5
+The fundamental concept behind the Kappa Score is it measures the amount of "agreement" between two values. In classification, one of this is the predicted value and other is the ground truth.
+Kappa score takes into consideration not 1, but 2 different accuracy measures. One is the usual Predictions accuracy, and the other one is the Expected accuracy.The expected accuracy is the accuracy which can be attained by any random predictions. Kappa Score is calculated as:
+
+
+K = (Predicted accuracy - Expected accuracy)/(1 - Expected accuracy)
+
+So, if K = 0.4, and expected accuracy is 50%, you can say that your classifier is performing 40% better than the random predictions, meaning a prediction accuracy of 70%.
+A low value of K means, a low level of "agreement" between the classifier and the ground truth.Kappa Score can also be used to compare the performance of 2 models in the same fashion.
+
+Example :  
+Suppose two museum curators are asked to rate 70 paintings on whether they’re good enough to be hung in a new exhibit.
+         
+              Rater 2 
+         ________________
+        |_____| Yes | No | 
+Rater 1 |Yes  | 25  | 10 |
+        |No   | 15  | 20 |
+
+
+-> Step 1: Calculate relative agreement (po) between raters.
+
+First, we’ll calculate the relative agreement between the raters. This is simply the proportion of total ratings that the raters both said “Yes” or both said “No” on. 
+
+We can calculate this as:
+
+po = (Both said Yes + Both said No) / (Total Ratings)
+po = (25 + 20) / (70) = 0.6429
+
+
+-> Step 2: Calculate the hypothetical probability of chance agreement (pe) between raters.
+
+Next, we’ll calculate the probability that the raters could have agreed purely by chance.
+
+This is calculated as the total number of times that Rater 1 said “Yes” divided by the total number of responses, multiplied by the total number of times that Rater 2 said “Yes” divided by the total number of responses, added to the total number of times that Rater 1 said “No” multiplied by the total number of times that Rater 2 said “No.”
+
+For our example, this is calculated as:
+
+P(“Yes”) = ((25+10)/70) * ((25+15)/70) = 0.285714
+P(“No”) = ((15+20)/70) * ((10+20)/70) = 0.214285
+pe = 0.285714 + 0.214285 = 0.5
+
+
+-> Step 3: Calculate Cohen’s Kappa
+
+Lastly, we’ll use po and pe to calculate Cohen’s Kappa:
+
+k = (po – pe) / (1 – pe)
+k = (0.6429 – 0.5) / (1 – 0.5)
+k = 0.2857
+Cohen’s Kappa turns out to be 0.2857. Based on the table from earlier, we would say that the two raters only had a “fair” level of agreement.
+
+
+
+
+
+
+
+
+#QUEESTION6
+ Ensemble methods is a machine learning technique that combines several base models in order to produce one optimal predictive model. To better understand this definition lets take a step back into ultimate goal of machine learning and model building. This is going to make more sense as I dive into specific examples and why Ensemble methods are used.
+
+The goal of any machine learning problem is to find a single model that will best predict our wanted outcome. Rather than making one model and hoping this model is the best/most accurate predictor we can make, ensemble methods take a myriad of models into account, and average those models to produce one final model. The ensemble models are used to achieve this gnerality and accurate predictions.
+
+
+
+
+
+
+#QUESTION7
+A descriptive model is used for tasks that would benefit from the insight gained from summarizing data in new and interesting ways. As opposed to predictive models that predict a target of interest, in a descriptive model, no single feature is more important than any other.
+For example, the descriptive modeling task called pattern discovery is used to identify useful associations within data. Pattern discovery is often used for market basket analysis on retailers' transactional purchase data. Here, the goal is to identify items that are frequently purchased together, such that the learned information can be used to refine marketing tactics. 
+The descriptive modeling task of dividing a dataset into homogeneous groups is called clustering. This is sometimes used for segmentation analysis that identifies groups of individuals with similar behavior or demographic information, so that advertising campaigns could be tailored for particular audiences. Although the machine is capable of identifying the clusters, human intervention is required to interpret them. For example, given five different clusters of shoppers at a grocery store, the marketing team will need to understand the differences among the groups in order to create a promotion that best suits each group.
+
+
+
+
+
+
+
+#QUESTION8
+A linear regresison model can be evaluated by the use of following performance metrics:
+
+1. R Square/Adjusted R Square: 
+
+R² is calculated by the sum of squared of prediction error divided by the total sum of square which replace the calculated prediction with mean. R Square value is between 0 to 1 and bigger value indicates a better fit between prediction and actual value.
+But When we do fine tuning to model to get better accuracy then R² Adjust help us to better understand. It happen when we add more independent features or penalize more feature due to over fitting . Then we can see different score between on these measures.
+
+2. Mean Square Error(MSE)/Root Mean Square Error(RMSE):
+
+R² is a relative measure of how well the model fit dependent variables, whereas Mean Square Error is an absolute measure of the fit of model. MSE is calculated by sum of square of prediction error. Where prediction error is minus between true values and prediction values, and then it is made by square because we avoid negative error score.
+
+3. Mean Absolute Error(MAE):
+
+This is almost same to Mean Square Error metric but only MAE take absolute error value instead of square of predicted error for avoiding negative score . However, here , we don’t need to calculate Root of MAE score . We can interpret directly the score with real values.
+
+4. illustrate Residual of model as a normal distribution ( bell shape):
+
+At last for evaluation , We can also explore residuals, which comes from true values and predicted values, by scatterplot or diskplot of searbearn library or matplotlib. If we get linear shape on scatter plot or bell shape in distplot , then we can pretty say that model fit perfectly, and can predict very close to real values. 
+
+5. By OLS from statemodels.formula: 
+
+By statemodels library , we can explore all over summary on one place like R² , R² adjust , coeff etc.
+
+
+
+
+
+
+#QUESTION9
+
+->Descriptive Data Modelling :
+1. Descriptive modelling is generally used to support correlation, cross-tabulation, frequency, etc.
+
+2. It defines the features of the data in a target data set.
+
+3. It requires data aggregation and data mining.
+
+4. The descriptive analysis only responds to the situation.It can support accurate records.
+
+->Predictive Data Modelling :
+1. The term 'Predictive' defines to predict something, so predictive data modelling is the analysis done to predict the future event or multiple data or trends.
+
+2. It executes the induction over the current and past records so that predictions can appear.
+
+3. It requires statistics and data forecasting procedures.
+
+4. The predictive analysis includes control over the situation along with responding to it. It makes results does not provide accuracy.
+
+
+-> Overfitting :
+1. Overfitting occurs when our machine learning model tries to cover all the data points or more than the required data points present in the given dataset.
+ 
+2. The model starts caching noise and inaccurate values present in the dataset, and all these factors reduce the efficiency and accuracy of the model.
+
+3. The overfitted model has low bias and high variance.
+
+-> Underfitting:
+1. Underfitting occurs when our machine learning model is not able to capture the underlying trend of the data. 
+
+2. In the case of underfitting, the model is not able to learn enough from the training data, and hence it reduces the accuracy and produces unreliable predictions.
+
+3. An underfitted model has high bias and low variance. 
+
+
+
+
+
+
+
+#QUESTION10
+
+->LOOCV:
+Whenever we get out data we split it into train and test data where the test dataset should be left untouched. Further, the train dataset should be split into train and validation dataset where we iterate through each dataset keeping a subset of data untoched in every fold.
+Here fold is the subset into which the orgiinal train dataset is divided. Thus the number of folds in which this train dataset is divided into after a random shuffle is known as k-folds where k reperesents the number of sub-datasets into which the train dataset is divided into. If there are say 1000 datapoints then there will be 1000 folds this means that k==1000 this is known as leave one out cross validation.
+
+
+-> F-Measurement:
+F-Measure provides a way to combine both precision and recall into a single measure that captures both properties. Once precision and recall have been calculated for a binary or multiclass classification problem, the two scores can be combined into the calculation of the F-Measure. It is given by :
+
+F-Measure = (1+B^2) *(Precision * Recall) / (Precision + Recall)
+
+Where B is parameter dependent upon the fact that whether the False Positive or the False Negative is important, if both FP and FN are important then B=1. Formula becomes:
+
+F-Score = 2 *(Precision * Recall) / (Precision + Recall) --> also known as harmonic mean.
+
+The F-score is commonly used for evaluating information retrieval systems such as search engines, and also for many kinds of machine learning models, in particular in natural language processing.
+
+
+
+->Receiver Operating Characterstics: 
+ROC is a metric that helps us to find out the threshold point for random forest algorithm where we have to find the ouput for the threshold point the specificity and sensitivity i.e. FPR and TPR respectively which is used to find out the best performing values according to the case and prioprity.
+To find the TPR and FPR we use different values of threshold and compare them to the predicted output and set the values to 0 or 1 in accordance with if the predicted values are above the taken threshold value or not.
+Preferably the ROC and AUC curve should be used for classification problems and helps us determine the best threshold point and how well the model performs.
+
+
+-> 
+
+
