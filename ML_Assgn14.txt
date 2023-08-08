@@ -1,0 +1,201 @@
+#QUESTION1
+As the name suggests, supervised learning is where a machine learns but under supervision. It uses labeled datasets to train algorithms how to analyze data and predict accurate outcomes. 
+
+In the training phase, datasets are fed into the system to help algorithms learn which output can be mapped to a specific input value. Then, the system is presented with unlabeled test data to check if the algorithm can make accurate predictions. The accuracy is measured through loss function, based on which adjustments are made accordingly. This training phase continues until errors are successfully minimized. 
+
+
+
+
+
+#QUESTION2
+MAchine learning can be used in many ways in healthcare one of the most common ways is to be able to predict whether a certain patient has a disease or not depending upon the features such as age, sex, weight etc. 
+
+We can train our model on a sample dataset with different input features and perform the hyperparameter tuning to fine tune the model to make accurate predictions for the new data or  a new patient in this case.
+
+
+
+
+
+
+#QUESTION3
+-> E-mail Filtering 
+Supervised learning is commonly used in email filtering to classify incoming emails as spam or legitimate.
+
+-> Credit Scoring
+In credit scoring, supervised learning is used to predict the creditworthiness of loan applicants. A labeled dataset containing examples of past loan applicants and their credit history, income, employment status, and other relevant factors is used to train a machine learning algorithm 
+
+-> Voice Recognition
+Supervised learning is utilized in voice recognition to help virtual assistants and other applications recognize and understand spoken commands.This allows virtual assistants to understand and respond to spoken commands like managing reminders, playing music, or controlling smart home devices.
+
+
+
+
+
+
+#QUESTION4
+-> CLASSIFICATION 
+This technique uses a separate algorithm to segregate test data into specific categories, based on the labeled training data set. Classification is generally used when the input data can be tagged or classified into categories. Some examples are, true or false, male or female, etc. 
+
+-> REGRESSION
+This is used to determine the relationship between dependent and independent variables and draw projections. A few examples are predicting the price of a house, projecting sales revenue within a given time frame, etc.
+
+
+
+
+
+
+
+#QUESTION5
+Some of the most common classification algoritms used in ML are:
+1. Logistic Regreseeion
+2. Naive-Baye's Classifier 
+3. K-Nearest Neighbours
+4. Random Forest Classifier 
+5. Support Vector Machine(SVM)
+
+
+
+
+
+
+#QUESTION6
+The goal of the SVM algorithm is to create the best line or decision boundary that can segregate n-dimensional space into classes so that we can easily put the new data point in the correct category in the future. This best decision boundary is called a hyperplane.
+SVM chooses the extreme points/vectors that help in creating the hyperplane. These extreme cases are called as support vectors, and hence algorithm is termed as Support Vector Machine. Consider the below diagram in which there are two different categories that are classified using a decision boundary or hyperplane:
+
+Example :
+SVM can be understood with the example that we have used in the KNN classifier. Suppose we see a strange cat that also has some features of dogs, so if we want a model that can accurately identify whether it is a cat or dog, so such a model can be created by using the SVM algorithm. We will first train our model with lots of images of cats and dogs so that it can learn about different features of cats and dogs, and then we test it with this strange creature. So as support vector creates a decision boundary between these two data (cat and dog) and choose extreme cases (support vectors), it will see the extreme case of cat and dog. On the basis of the support vectors, it will classify it as a cat or a dog.
+
+
+
+
+
+
+
+#QUESTION8
+In SVM when we segregate different classes we draw a plane to separate the different classes there can be multiple lines/decision boundaries to segregate the classes in n-dimensional space, but we need to find out the best decision boundary that helps to classify the data points. This best boundary is known as the hyperplane of SVM.
+
+The data points or vectors that are the closest to the hyperplane and which affect the position of the hyperplane are termed as Support Vector. Since these vectors support the hyperplane, hence called a Support vector.
+
+
+
+
+
+
+#QUESTION9
+The purpose of Kernels is to convert a lower dimension dataset to a higher dimension dataset. For example say a dataset has data that is distributed in a certain way and we visualize the data in but after visualizing the data cannot be separated in two different categories clearly or separating the different categories in a dataset and even if we do it 
+the accuracy of less than say 50%. Since, the data is separable so we try to convert this data from lower dimension to higher dimension using kernels. Now if we convert this data to higher dimension it becomes clearly separable. 
+
+
+
+
+
+
+#QUESTION10
+1. Distance betweeen the support planes i.e. the greater the distance between the two planes the better is the classification.
+
+2. The marginal error which is the summed distance of all the points with respect to all the misclassified points from the marginal plane.
+
+3. The dimensionality or choosing kernels for drawing the separation or marginal hyperplane.
+
+
+
+
+
+
+#QUESTION11
+1. SVM works relatively well when there is a clear margin of separation between classes.
+2. SVM is more effective in high dimensional spaces and is relatively memory efficient
+3. SVM is effective in cases where the dimensions are greater than the number of samples.
+
+
+
+
+
+
+#QUESTION12
+1. SVM algorithm is not suitable for large data sets.
+
+2. SVM does not perform very well when the data set has more noise i.e. target classes are overlapping. In cases where the number of features for each data point exceeds the number of training data samples, the SVM will underperform.
+
+3. As the support vector classifier works by putting data points, above and below the classifying hyperplane there is no probabilistic explanation for the classification.
+
+
+
+
+
+
+
+#QUESTION13
+1. If you think about KNN, we used the test data to basically determine the right value of K and the train data to find the nearest neighbors. We got the accuracy of 90% on the test data which we also used to determine the right value of “K”. But even after training and achieving this accuracy this accuracy will not be carried over to the new dataset.
+
+2. In kNN algorithm we need to choose a value for k using different values of k which is used for the number of folds or the test data we need to split our test data into. Although the greater the number of folds the higher is the accuracy but after a certain number of folds the accuracy decreases. 
+
+3. Inductive Bias in decision tress is that shorter trees are preffered over longer trees. Prefer trees that place high information gain attributes close to the root.
+
+
+
+
+
+
+
+#QUESTION14
+Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.
+
+In a Decision tree, there are two nodes, which are the Decision Node and Leaf Node. Decision nodes are used to make any decision and have multiple branches, whereas Leaf nodes are the output of those decisions and do not contain any further branches.
+The decisions or the test are performed on the basis of features of the given dataset.
+It is a graphical representation for getting all the possible solutions to a problem/decision based on given conditions.
+
+
+
+
+
+
+
+#QUESTION15
+A node is a graphical representation of data in the tree whereas a node is a leaf node when it either has all True or all False at any point i.e. the decision at that point is either all true or all false.
+
+
+
+
+
+#QUESTION16
+Entropy of a decision tree is the nature of any node to split which means that if a decision tree has 3 Yes/3 No then the entropy will be 1 and if any of the Yes or No are 0 for a specific node then the entropy will be 0. For entropy = 1 the split is said to be very impure whereas when entropy = 0 the split is said to be pure split.
+
+
+
+
+
+
+#QUESTION17
+The knowledge or information gain is used to decide on the basis of which features we need to further split the child nodes. Internally the info gain is calculated for every node and the feature with the higher information gain is selected. 
+
+
+
+
+
+#QUESTION18
+1. It is simple to understand as it follows the same process which a human follow while making any decision in real-life.
+2. It can be very useful for solving decision-related problems.
+3. It helps to think about all the possible outcomes for a problem.
+
+
+
+
+
+#QUESTION19
+1. The decision tree contains lots of layers, which makes it complex.
+2. It may have an overfitting issue.
+3. For more class labels, the computational complexity of the decision tree may increase.
+
+
+
+
+
+#QUESTION20
+Random Forest is a popular machine learning algorithm that belongs to the supervised learning technique. It can be used for both Classification and Regression problems in ML. It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model.
+The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting.
+
+
+
+
+

@@ -1,0 +1,132 @@
+#QUESTION1
+In machine learning, features are individual independent variables that act like a input in your system. Actually, while making the predictions, models use such features to make the predictions. And using the feature engineering process, new features can also be obtained from old features in machine learning. They are of 2 types categorical and continuous.For example:-
+in the following table we can take sepal_length, sepal_width, petal_length, petal_width as the inout features for predicting the species of the flower. We can choose any number of features according tom our use case.
+
+sepal_length        sepal_width   petal_length  petal_width     species
+
+    5.1                 3.5          1.4            0.2         setosa
+    4.9                 3.0          1.4            0.2         setosa
+    7.0                 3.2          4.7            1.4        versicolor
+    6.4                 3.2          4.5            1.5        versicolor
+    6.9                 3.1          4.9            1.5        versicolor
+    5.5                 2.3          4.0            1.3        versicolor
+    6.3                 3.3          6.0            2.5        virginica
+  
+
+
+
+
+
+#QUESTION2
+We should use the feature contruction while dealing with categorical data since the machine learning model is far better in dealning with numerical and continuous features therefore we should use techniques like one hot encoding, to convert this categorical features to numerical so that they can be better utilized by the model.
+
+Feature constrcuiton should also be used while building a better set of features which is highly correlated to the output data using existing features which are not so highly correlated to 
+the output feature.
+
+
+
+
+
+
+#QUESSTION3
+Nominal variables can be encoded using one hot encoding, one hot ecoding with many categorical variables and mean encoding.
+One hot encoding - Here we convert the categories to numerical values so that the ML model can analyse it better.
+
+One hot encoding with many categorical variables - If the no of categories is large then we take the top 10 categories which are the most frequent categories and perform the one hot encoding on them.
+
+Mean ecnoding - Here we find the mean of all occurences of a particular category which are futher replaced as input features to be fed to the model instead of the original categorical values.
+
+
+
+
+
+
+#QUESTION4
+We can convert continuous values to numerical values using binning which essentially means to cut the categorical values into a range of values. This can be achieved using the cut() function in pandas defined as pd.cut() however the method only works for the one-dimensional array-like objects. It returns the following objects as outputs:
+
+
+out: It mainly refers to a Categorical, Series, or ndarray that is an array-like object which represents the respective bin for each value of These objects depend on the value of labels. 
+ The possible values than can be returned are as follows:
+ 
+ True: It is a default value that returns a Series or a Categorical variable. The values stored in these objects are Interval data type.
+ 
+ sequence of scalars: It also returns a Series or a Categorical variable. The values that are stored in these objects are the type of the sequence.
+
+ False: The false value returns an ndarray of integers.
+
+
+bins: It mainly refers to a ndarray
+
+
+
+
+
+
+
+#QUESTION7
+Redundant features are those that are correlated with other features and not relevant in the sense that they do not improve the discriminatory ability of a set of features. We can use the pearson correlation method, correlation matrix method. Correlation can be calculated among the independent features by using any of the statistical methods such as the chi square test, the 
+correlation coeffiecint or the ANOVA test.
+
+
+
+
+
+#QUESTION8
+There are 5 most widely used methods to find the similarity among the datapoints in a dataset.
+
+1. Eucledian Distance:
+The is the most widely used type of distance for measure of similarity and is given by length of the shortest path between the two datapoints.
+
+2. Manhattan Distance:
+It is calculated by the sum of the x-coordinate and the y-coordinates between the two datapoints. For example supose in a plane with p1 at (x1, y1) and p2 at (x2, y2).
+then distance is given by,
+Manhattan distance = |x1 – x2| + |y1 – y2|
+
+3. Cosine distance:
+The  cosine  similarity  metric  finds  the  normalized  dot  product  of  the  two  attributes.  By determining  the  cosine similarity, we  would  effectively try  to  find  the  cosine  of  the  angle between the two objects. 
+
+Other commonly sued distance metrics are Minkowski distance, Jaccard similarity.
+
+
+
+
+
+
+#QUESTION9
+Euclidean  Distance  represents  the  shortest  distance  between  two  vectors. It  is the  square root of the  sum  of  squares  of  differences  between  corresponding  elements.
+Manhattan  Distance  is  the  sum  of  absolute  differences  between  points  across  all  the  dimensions.
+Euclidean distance takes longer to compute than manhattan distance.
+
+
+
+#QUESTION10
+Feature transformation is used to convert not so useful or feartures with low impact on output feature to highly correlated and useful features using various transfromation techniques such as nomralization and standardization, combining multiple columns to form one or more useful column(s) and fillinf the missing values if any with most useful values such as mean, median or mode. It also includes amputation of non useful data.
+
+Feature selection is a process where we select the most useful and higly correlated data to the output feature and selecting these features in such a way that there is no excessive or less amount of data to help train our model. Here we use statistical approaches, explore different types of models and use techniques like grid dearch to find the best fit parameters for our model so that we can get the best ML model which is fast as well as accurate in predicting output features.
+
+
+
+
+
+#QUESTION11
+1. SVD
+
+SVD deals with decomposing a matrix into a product of 3 matrices. It helps us to break down a matrix of higher rank into smaller matrices. Where rank is defined as the  maximum  number  of  linearly independent  row (or column)  vectors  in  the  matrix. The rank  of  a  matrix  can  be  thought of  as  a  representative  of  the  amount  of  unique  information  represented  by  the  matrix.  Higher the rank, higher the information. Mathematically it can be represented as :
+ 
+A = USV^T
+
+where,
+U is an m x m   matrix  of  Left  Singular  Vectors
+S is an m x n  rectangular  diagonal  matrix  of  Singular  Values arranged in decreasing  order
+V is an n x n  matrix of Right Singular Vectors
+
+In this process it is found that  most of the data is accumulated in the initial few etnries of lower ranked matrices thus we can ignore the latter entries of these matrices which approaches zero thereby reducing the computation time required.
+
+
+
+2. 
+
+
+
+
+

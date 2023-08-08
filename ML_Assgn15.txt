@@ -1,0 +1,285 @@
+#QUESTION1
+-> Supervised Learning:
+
+1. Supervised learning algorithms are trained using labeled data.
+2. Supervised learning model predicts the output.
+3. Supervised learning can be categorized in Classification and Regression problems.
+4. Supervised learning model produces an accurate result.
+
+-> Unsupervised Learning:
+
+1. Unsupervised learning algorithms are trained using unlabeled data.
+2. Unsupervised learning model finds the hidden patterns in data.
+3. Unsupervised Learning can be classified in Clustering and Associations problems.
+4. Unsupervised learning model may give less accurate result as compared to supervised         learning.
+
+->Semi Supervised Learning:
+1. It is a mixture of supervised and unsupervised learning.
+2. It gives good results and decent predictions.
+3. It uses a little labelled data and lots and lots of unlabelled data.
+
+
+
+
+
+
+
+
+
+
+#QUESTION2
+
+1. Example 1 (Email Spam):
+The goal is to predict whether an email is a spam and should be delivered to the Junk folder.
+We can use the Naive-Baye's algorithm to classify text as spam or not spam. We can cuta paragraph into differrent pieces of sentences and calculate the sentences's probability for being spam or not spam and classify the text thus it can help classify the text as spam or not spam.
+
+2. Example 2 (Handwritten Digit Recognition):
+To the computer, an image is a matrix, and every pixel in the image corresponds to one entry in the matrix. Every entry is an integer ranging from a pixel intensity of 0 (black) to 255 (white). Hence the raw data can be submitted to the computer directly without any feature extraction. The image matrix was scanned row by row and then arranged into a large 256-dimensional vector. This is used as the input to train the classifier. Note that this is also a supervised learning algorithm where Y, the response, is multi-level and can take 10 values.
+
+3. Example 3 (Customer Prediction):
+We can use exploratory data analyses and use algorithm such as random forest or SVM to gather the group of data on which the prediction can be done and we can determine with high accuracy if the customer or the group of customer are highly likely to purchase a product or service again or not.
+
+4. Example 4 (Ad click-through rate prediction):
+Binary classification models can be used to predict whether one or more ads on the website will be clicked or not. Such models are used to optimize the ad inventory on websites by selecting which ads will have a better chance of being clicked. A machine learning classification model can be built using historical data about what types of users do or don’t click on certain ads, along with information like demographics and content within each web page where an ad appears; then it is used to predict the chances that a user will click on an ad.
+
+5. Example 5 (Credit card fraud detection):
+A binary classification model can be used for credit card fraud detection where the historical transaction data of a customer is analyzed using machine learning algorithms like Naïve Bayes, k-NN, etc. Based on past fraudulent or non-fraudulent transaction data and machine learning classification models, it can be predicted whether the given credit card will result in fraudulent transactions or not. Read more about credit card fraud detection and machine learning.
+
+
+
+
+
+
+
+
+
+
+
+#QUESTION3
+1. We gather the raw data and visualize the data. 
+
+2. We have to cleanse the data which is called the data preprocessing step and we prepare the data for further classification.
+
+3. After the preprocessing we go ahead with the exploratory data analysis and draw conclusions and insights as well as perform feature engineering process for the same.
+
+4. We define the classifier and test our models for the accuracy.
+
+5. Finally choose our model and use it to train our split and then perform validation if required and finally test it on our test data. To futher enhance the accuracy we tune our hyperparameters by testing different values for the parameters.
+
+
+
+
+
+
+
+
+
+#QUESTION4
+Support vector machine is an algorithm that is used to separate two different classes of data using a separation plane called hyperplane. 
+
+Support Vector Machine is responsible for finding the decision boundary to separate different classes and maximize the margin.
+Margins are the perpendicular distances between the line and those dots closest to the line. These margins are called support planes. 
+
+To define these hyperplanes we define several constraints. Consider a breast cancer dataset 
+
+This dataset comprises 30 features (mean radius, mean texture, mean perimeter, mean area, mean smoothness, mean compactness, mean concavity, mean concave points, mean symmetry, mean fractal dimension, radius error, texture error, perimeter error, area error, smoothness error, compactness error, concavity error, concave points error, symmetry error, fractal dimension error, worst radius, worst texture, worst perimeter, worst area, worst smoothness, worst compactness, worst concavity, worst concave points, worst symmetry, and worst fractal dimension) and a target (type of cancer). This data has two types of cancer classes: malignant (harmful) and benign (not harmful).
+
+1. Let's load the dataset required.
+
+2. After you have loaded the dataset, you might want to know a little bit more about it. You can check feature and target names.
+
+3. To understand model performance, dividing the dataset into a training set and a test set is a good strategy.
+Split the dataset by using the function train_test_split(). you need to pass 3 parameters features, target, and test_set size. Additionally, you can use random_state to select records randomly.
+
+4. Let's build support vector machine model. First, import the SVM module and create support vector classifier object by passing argument kernel as the linear kernel in SVC() function.Then, fit your model on train set using fit() and perform prediction on the test set using predict().
+
+5. Let's estimate how accurately the classifier or model can predict the breast cancer of patients.Accuracy can be computed by comparing actual test set values and predicted values.
+
+
+
+
+
+
+
+
+#QUESTION5
+->Advantages:
+
+1. SVM works relatively well when there is a clear margin of separation between classes.
+2. SVM is more effective in high dimensional spaces.
+3. SVM is effective in cases where the number of dimensions is greater than the number of samples.
+4. SVM is relatively memory efficient.
+
+-> Disadvantages:
+
+1. SVM algorithm is not suitable for large data sets.
+2.SVM does not perform very well when the data set has more noise i.e. target classes are overlapping.
+3. In cases where the number of features for each data point exceeds the number of training data samples, the SVM will underperform.
+4. As the support vector classifier works by putting data points, above and below the classifying hyperplane there is no probabilistic explanation for the classification.
+
+
+
+
+
+
+
+
+#QUESTION6
+1. Load the data
+2. Initialise the value of k
+3. For getting the predicted class, iterate from 1 to total number of training data points.
+ 
+3.1 Calculate the distance between test data and each row of training dataset. Here we     will use Euclidean distance as our distance metric since it’s the most popular method. The other distance function or metrics that can be used are Manhattan distance, Minkowski distance, Chebyshev, cosine, etc. If there are categorical variables, hamming distance can be used.
+3.2 Sort the calculated distances in ascending order based on distance values.
+3.3 Get top k rows from the sorted array.
+3.4 Get the most frequent class of these rows.
+3.5 Return the predicted class.
+
+
+
+
+
+
+
+
+#QUESTION7
+The error rate is the amount of error that increases with respect to the increasing value of K. The error rate goes down as the value of k increases and then increases after a certain point. This method of finding the most optimal k value is known as the elbow mehtod.
+
+
+
+
+
+
+#QUESTION9
+1. Import the data.
+2. Check the data and import the data summary.
+3. Split the data into train and test split.
+4. Calculate the Euclidean distance.
+5. Writing the function to predict kNN.
+6. Calculating the label(Name) for K=1.
+7. In the same way, you can compute for other values of K.
+
+
+
+
+
+
+
+#QUESTION10
+A decision tree is a graph like structure which is used for  making decision based on certain condiitons. It is made up of branches and nodes. Decision trees are a structure which can provide decisions really fast as compared to normal datastructures which can provide results really fast and in a few iterations.
+
+There are 3 types of nodes in a decision tree :
+
+1. A parent node is one which has futher child nodes. Depending upon the type of tree such as binary which means every parent node has 2 child nodes.
+
+2. A child node or child nodes are those which have a parent node and come out of a parent node.
+
+3. A leaf node is a node which has no further nodes and the final nodes of the decision tree.
+
+
+
+
+
+
+
+
+
+
+#QUESTION11
+There are two ways to scan a decision tree :
+
+1. Bread First Search (BFS) :
+Here we scan a decision tree by going through the levels i.e. we scan the nodes at first level and then the next level and so on then we combine the total decisions at each level and analyse them then the larger value wins.
+
+2. Depth First Search (DFS):
+In this we scan the decision tree one node at a time from left to right i.e. first we scan the parent node if the node satisfies the condition then we proceed to the right node otherwise we proceed to the left node. After we have reached the full depth of the decision tree we trace back the path we came from then proceed towards the right side of the tree.
+
+
+
+
+
+
+
+
+#QUESTION12
+There are two techniques while using decision tree algorithms i.e. the ID3 and CART algorithm and CART generally being the more efficient of the two. The decision tree splitting happens until we reach the leaf nodes.
+We also need to check the nodes for purity of the split which can be done using (i)Entropy and (ii)Gini Index. 
+Also the features to be selected on the basis of which we split the node are selected using the Information Gain.
+
+The Split is called a Pure Split if the Entropy is 0 and a highly impure split if the Entropy is 1.
+For larger datasets the Gini Index is taken whereas the Entropy is better for smaller datasets.
+
+
+
+
+
+
+
+#QUESTION13
+Before learning a model given a data and a learning algorithm, there are a few assumptions a learner makes about the algorithm. These assumptions are called the inductive bias. It is like the property of the algorithm.
+
+For eg. in the case of decision trees, the depth of the tress is the inductive bias. If the depth of the tree is too low, then there is too much generalisation in the model. Similarly, if the depth of the tree is too much, there is too less generalisation and while testing the model on a new example, we might reach a particular example used to train the model. This may give us incorrect results.
+
+We can perform pruning to stop the overfitting in a decision tree. There are of 2 types:
+
+This technique refers to the early stopping mechanism, where we  do not allow the training process to go through,consequently preventing the overfitting of the model. It involves tuning the hyperparameters like, depth, minimum samples, and minimum sample split.It is called Pre-Pruning.
+
+This technique allows decision trees to grow to their full depth in the training process, then starts removing the branches of the trees to prevent the model from overfitting.This method is known as Post-Pruning.
+
+
+
+
+
+
+
+
+
+#QUESTION14
+-> Advantages:
+
+1. Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
+2. A decision tree does not require normalization of data.
+3. A decision tree does not require scaling of data as well.
+4. Missing values in the data also do NOT affect the process of building a decision tree to any considerable extent.
+5. A Decision tree model is very intuitive and easy to explain to technical teams as well as stakeholders.
+
+-> Disadvantages: 
+
+1. A small change in the data can cause a large change in the structure of the decision tree causing instability.
+2. For a Decision tree sometimes calculation can go far more complex compared to other algorithms.
+3. Decision tree often involves higher time to train the model.
+4. Decision tree training is relatively expensive as the complexity and time has taken are more.
+5. The Decision Tree algorithm is inadequate for applying regression and predicting continuous values.
+
+
+
+
+
+
+
+
+#QUESTION15
+Decision tree algorithms are most useful for the algorithms that provide a decision and a true definitive outcome such as :
+
+1. Decision whether a project is beneficial for the company or not.
+2. Whether to provide to a loan to certain customer or not.
+
+
+
+
+
+
+
+#QUESTION16
+A Random Forest method is an ensemble technique used for decision trees called bagging. Here, we create many decision trees on top of which we apply models and have a majority voting and the outcome with the majority votes is chosen.
+A random forest uses the bagging ensemble technique rather than a decision tree. 
+
+
+
+
+
+
+#QUESTION17
+
+
+

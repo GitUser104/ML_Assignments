@@ -1,0 +1,125 @@
+#QUESTION1
+In a linear equation, the independent variable is a variable that can take on any value and is not dependent on the value of any other variables. The dependent variable is a variable that depends on the value of one or more independent variables. Consider the equation:
+
+y = mx + c, here the x is the independent variable and y is the dependent varaible.
+
+
+
+
+
+
+#QUESTION2
+Simple Linear Regression is a type of Regression algorithms that models the relationship between a dependent variable and a single independent variable. The relationship shown by a Simple Linear Regression model is linear or a sloped straight line, hence it is called Simple Linear Regression.
+We have to find the best fit line and minimize the error called mean squared error and tune the parameters for best convergence rate.
+
+One example of a problem that can be solved using the liner regression approach is the prediction of the weight of a person using height as an input feature.
+
+We can easily train our model on the training dataset and predict the value of the target feature which is height in this case. Linear regression models work the best on features which are linearly dependent on each other.
+
+
+
+
+
+
+
+#QUESTION3 
+the slope is the vertical distance divided by the horizontal distance between any two points on the line. This ratio is also known as the rate of change along the line. It tells us the rate of change of output feature with the change in the input feature. Also a positive slope indicates a direct repaltionship between the two features and a negative slope indicates an indirect relationship between the two features.
+
+
+
+
+
+#QUESTION4
+
+SLOPE = (y2 - y1) / (x2 - x1) = (2-2) / (2-3) = 0
+
+
+
+
+
+
+#QUESTION5
+If the dependent and indenpendent features have a direct relationship i.e. when one increases the other increases and when one deacreases the other also decreases then the slope of the linear regression model will be positive.
+
+
+
+
+
+
+#QUESTION6
+If the dependent and indenpendent features have an indirect relationship i.e. when one increases the other decreases and when one deacreases the other increases then the slope of the linear regression model will be negative.
+
+
+
+
+
+#QUESTION7
+Multiple linear regression is a tehcnique that works exactly like simple linear regression and follows the same principle as that only exception is that there are more number of input features to analyse.
+This type of analysis allows you to understand the relationship between a continuous dependent variable and two or more independent variables. We make assumptions while using such models such as :
+
+- The independent and dependent variables are linearly related.
+- There is no strong correlation between the independent variables.
+- Residuals have a constant variance.
+- Observations should be independent of one another.
+- It is important that all variables follow multivariate normality.
+
+
+
+
+
+
+#QUESTION8
+The residual sum of squares essentially measures the variation of modeling errors. In other words, it depicts how the variation in the dependent variable in a regression model cannot be explained by the model. Generally, a lower residual sum of squares indicates that the regression model can better explain the data, while a higher residual sum of squares indicates that the model poorly explains the data.
+
+
+
+
+
+
+#QUESTION9
+The regression sum of squares describes how well a regression model represents the modeled data. A higher regression sum of squares indicates that the model does not fit the data well.
+
+
+
+
+
+
+#QUESTION10
+Multicollinearity occurs when two or more independent variables in a data frame have a high correlation with one another in a regression model.This means that one independent variable can be predicted from another in a regression model. For example, sets like height and weight, household income and water consumption, mileage and the price of a car, study time and leisure time, etc.
+
+
+
+
+
+
+#QUESTION11
+In statistics, heteroskedasticity (or heteroscedasticity) happens when the standard deviations of a predicted variable, monitored over different values of an independent variable or as related to prior time periods, are non-constant. With heteroskedasticity, the tell-tale sign upon visual inspection of the residual errors is that they will tend to fan out over time.
+
+
+
+
+
+
+#QUESTION12
+Ridge regression is a model tuning method that is used to analyse any data that suffers from multicollinearity. This method performs L2 regularization. When the issue of multicollinearity occurs, least-squares are unbiased, and variances are large, this results in predicted values being far away from the actual values. It basically adds a penalty denoted by lambda to the cost function of the linear regression.
+
+Lambda is the penalty term. λ given here is denoted by an alpha parameter in the ridge function. So, by changing the values of alpha, we are controlling the penalty term. The higher the values of alpha, the bigger is the penalty and therefore the magnitude of coefficients is reduced. 
+
+
+
+
+
+
+#QUESTION13
+LASSO regression, also known as L1 regularization, is a popular technique used in statistical modeling and machine learning to estimate the relationships between variables and make predictions. LASSO stands for Least Absolute Shrinkage and Selection Operator.
+
+The primary goal of LASSO regression is to find a balance between model simplicity and accuracy. It achieves this by adding a penalty term to the traditional linear regression model, which encourages sparse solutions where some coefficients are forced to be exactly zero. This feature makes LASSO particularly useful for feature selection, as it can automatically identify and discard irrelevant or redundant variables.
+
+
+
+
+
+
+#QUESTION14
+
+

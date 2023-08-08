@@ -1,0 +1,71 @@
+#QUESTION1 and QUESTION2
+The prior probability is the probability assigned to an event before the arrival of some information that makes it necessary to revise the assigned probability. The revision of the prior is carried out using Bayes' rule.
+ONce the revision is done we get what is called the posterior probability. Let us understand wiht the following example :
+
+Assume three acres of land have the labels A, B, and C. One acre has reserves of oil below its surface, while the other two do not. The prior probability of oil being found on acre C is one third, or 0.333. But if a drilling test is conducted on acre B, and the results indicate that no oil is present at the location, then the posterior probability of oil being found on acres A and C become 0.5, as each acre has one out of two chances. 
+
+
+
+
+
+#QUESTION3
+The term Likelihood refers to the process of determining the best data distribution given a specific situation in the data. when you calculate the likelihood, you’re attempting to determine whether the parameters in a model can be trusted based on the sample data you have observed. Consider the following example :
+
+Suppose you have an unbiased coin. If you flip the coin, the probability of getting head and a tail is equal, which is 0.5
+Now suppose the same coin is tossed 50 times, and it shows heads only 14 times. You would assume that the likelihood of the unbiased coin is very low. If the coin were fair, it would have shown heads and tails the same number of times.
+When calculating the probability of coin getting heads, you assume that P(head) = 0.5
+However, when calculating the likelihood, you are trying to find if the model parameter (p = 0.5) is correctly specified or not. 
+The fact that a coin only lands on heads 14 times out of 50 makes you highly suspicious that the true probability of a coin landing on heads on a given toss is p = 0.5. 
+
+
+
+
+
+
+#QUESTION4
+Naive-Baye's algorithm is used to solve classification problems and works on the concept of conditional probability and Baye's theorem thus the name. Here we need to find the probability of an event occuring given a condition or event occuring and based on the outcome of the probability we determine whether the prediction is TRUE/FALSE or 0/1 or YES/NO.
+It is called Naïve because it assumes that the occurrence of a certain feature is independent of the occurrence of other features.
+
+
+
+#QUESTION5
+Baye's optimal claasifier is used to find the most optimal probability. This works jsut like the Naive-Baye's algorithm but the only change is that there is a defined formula for the calculation of the most likely possibility of and event which is computed by adding all the possible hypothesis. The most probable classification of the new instance is obtained by combining the predictions of all hypotheses, weighted by their posterior probabilities. 
+A Bayes optimal classifier is a system that classifies new cases according to Equation. This strategy increases the likelihood that the new instance will be appropriately classified.
+
+
+
+
+
+#QUESTION6
+1. Training examples have an incremental effect on estimated probabilities of hypothesis correctness i.e. as the new data comes in we can get an accurate idea of whether the prior probablitity estimated stand true or not which helps us in determining the hypothersis was correct or not.
+
+2. Using bayesian learning methods we can compute the possible hypothesis for event's probability.
+
+
+
+
+#QUESTION7
+Whenever we use hypothesis testing we try to determine the output or outcome of event, to test our hypothesis i.e. know if the assumptions and calculations assumed and performed by us hold true or not we use various kind of statistcal test and experiments , such data or statistical models which hold true for the hypothesis and the output data is known as consisitent learners.
+
+
+
+
+#QUESTION8
+1. It is fast and can be used to make real-time predictions
+2. It handles both continuous and discrete data
+
+
+
+
+
+#QUESTION9
+1. Naive Bayes is sensitive to outliers or extreme values in the data, which can have a significant impact on the estimated probabilities and produce incorrect classification outcomes.
+2. Naive Bayes to accurately estimate the conditional probabilities of each feature, there must be enough training data. Insufficient training data may cause the algorithm to underperform.
+
+
+
+
+
+#QUESTION10
+
+
